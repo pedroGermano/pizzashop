@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "@rocketseat/eslint-config/react"
+  ],
+  "plugins": [
+    "simple-import-sort"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "noUnusedVariables": {
+      "level": "error",
+      "fix": "none"
+    },
+    "suspicious": {
+      "noDebugger": "off",
+      "noConsoleLog": "info"
+    },
+    "style": {
+      "noShoutyConstants": "warn",
+      "useNamingConvention": "error"
+    },
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": false
+      }
+    ]
+  }
+}
